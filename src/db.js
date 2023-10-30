@@ -11,6 +11,7 @@ const {
 //   logging: false, 
 //   native: false, 
 // });
+//ok
 
 console.log("DB_DEPLOY:", DB_DEPLOY);
 

@@ -24,7 +24,7 @@ const getCountries = async (req, res) => {
 
     
     res.status(200).json(countries);
-    console.log("soy yo", countries);
+   // console.log("soy yo", countries);
   } catch (error) {
     console.error('Error retrieving countries:', error);
     return res.status(500).json({ message: 'Internal server error' });

@@ -12,7 +12,7 @@ const {
 //   native: false, 
 // });
 
-console.log("DB_DEPLOY:", DB_DEPLOY);
+// console.log("DB_DEPLOY:", DB_DEPLOY);
 
 const sequelize = new Sequelize(DB_DEPLOY, {
   logging: false, 

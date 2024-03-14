@@ -6,8 +6,11 @@ const apiUrl = "http://localhost:5000/countries";
 // Función para obtener y guardar la información de la API en la base de datos
 const loadDb = async () => {
   try {
+    console.log('Iniciando carga de datos desde la API...');
+
     const response = await axios.get(apiUrl);
     const countriesData = response.data;
+    console.log('Datos obtenidos de la API.');
 
     // Guardar los países en la base de datos 
     for (const countryData of countriesData) {
@@ -29,6 +32,7 @@ const loadDb = async () => {
         });
       }
     }
+    console.log('Carga de datos completada.');
   } catch (error) {
     console.error('Error retrieving data:', error);
   }
